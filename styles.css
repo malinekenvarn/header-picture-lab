@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
+
+body {
+    color:  #21241F;
+    background-color: #C0AB9780; /* the last 2 digits in the hex code are to set the opacity */
+}
+
+header {
+    width: 100%;
+    max-width: 1200px; /* max-width = the width of the header*/
+    height: 300px; 
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* gives the sections a 3d like style*/
+    position: relative; /* this is to place text on top of the header*/
+}
+
+.header-img {
+    width: 100%;
+    filter: brightness(50%); /* darkens image, better contrast with white heading*/
+}
+
+.header-text{
+    position: absolute; /* places text on top of header*/
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.responsive-header {
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/header-mobile.jpg"); /* and darkens image*/
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: none;
+  }
+
+main {
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Inconsolata', monospace;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5em;
+    color: #74411D;
+}
+
+p {
+    line-height:1.5em;
+    font-size: 1.2em;
+}
+
+
+
+/*Responsive styles*/
+
+@media only screen and (max-width: 1210px){
+    .desktop-header{
+        display: none;
+    }
+    .responsive-header{
+        display: block;
+    }
+   
+}
+
+
+/* The color palette is generated in: https://www.canva.com/colors/color-palette-generator/ */
